@@ -16,15 +16,19 @@ const Home = () => {
   }, [])
 
   const troca = () => {
-    setData({ ...data, name: 'guga' })
+    if (data.name === 'Ricardo Martins') {
+      setData({ ...data, name: 'guga' })
+    } else {
+      setData({ ...data, name: 'Ricardo Martins' })
+    }
   }
 
 
   return (
     <div>
-      <p><h3>Nome: {data?.name}</h3></p>
-      <p><h3>Localização: {data?.location}</h3></p>
-      <p><h3>Login: {data?.login}</h3></p>
+      <h3><p>Nome: {data?.name}</p></h3>
+      <h3><p>Localização: {data?.location}</p></h3>
+      <h3><p>Login: {data?.login}</p></h3>
       <button onClick={troca}>
         Click
       </button>

@@ -1,8 +1,16 @@
 import React from 'react';
+import Task from './task';
 
-const TaskComponent = (props) => {
-  console.log('Tasks: ', props);
-  return <h1>Task Component</h1>
+
+const TaskComponent = ({ TaskComponent }) => {
+  console.log(TaskComponent);
+
+  return (
+    <div>
+      <h1>tasks</h1>
+      {TaskComponent.map(tarefa => <Task task={tarefa} />)}
+    </div>
+  )
 };
 
 export default TaskComponent;

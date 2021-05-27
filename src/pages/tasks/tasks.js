@@ -5,7 +5,6 @@ import TaskComponent from '../../components/taskComponent';
 const Tasks = () => {
   // const [message, setMessage] = useState('helloooo')
   const [tasks, setTasks] = useState([
-
     {
       id: '1',
       title: 'Estudar React',
@@ -15,7 +14,7 @@ const Tasks = () => {
       id: '2',
       title: 'Ler livros',
       completed: true,
-    }
+    },
   ]);
 
   return (
@@ -23,8 +22,6 @@ const Tasks = () => {
       <TaskComponent TaskComponent={tasks} />
       {/* <p>{message}</p>
       <button onClick={() => setMessage("Funcionouuu!")}>MUDAR</button> */}
-
-
     </div>
   )
 }

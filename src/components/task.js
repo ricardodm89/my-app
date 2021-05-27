@@ -1,8 +1,9 @@
 import React from 'react';
+import './task.css';
 
 const Task = ({ task }) => {
   return (
-    <h3>tarefa: {task.title}</h3>
+    <div className="taskContainer">{task.title}</div>
   );
 }
 

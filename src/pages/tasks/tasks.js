@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './styles.css';
-import TaskComponent from '../../components/taskComponent';
+import TaskComponent from '../../components/task/TaskComponent';
 import AddTask from '../../components/addTask/AddTask'
 const Tasks = () => {
   // const [message, setMessage] = useState('helloooo')

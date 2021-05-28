@@ -2,5 +2,6 @@ body{
   margin: 0 auto;
   background-color: #222;
   font-family: 'Bungee Inline', Fallback, sans-serif;
-  color: #fff
+  color: #fff;
+  font-weight: bold;
 }

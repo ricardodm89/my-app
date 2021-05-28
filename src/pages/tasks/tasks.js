@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './styles.css';
 import TaskComponent from '../../components/taskComponent';
-
+import AddTask from '../../components/addTask/AddTask'
 const Tasks = () => {
   // const [message, setMessage] = useState('helloooo')
   const [tasks, setTasks] = useState([
@@ -19,6 +19,7 @@ const Tasks = () => {
 
   return (
     <div className="container">
+      <AddTask />
       <TaskComponent TaskComponent={tasks} />
       {/* <p>{message}</p>
       <button onClick={() => setMessage("Funcionouuu!")}>MUDAR</button> */}
